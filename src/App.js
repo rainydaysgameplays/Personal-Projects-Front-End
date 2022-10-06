@@ -1,7 +1,9 @@
 import './App.css';
 import React, { useState }  from "react"
 import { Route, Routes } from 'react-router-dom'
-import Home from '/Components/Portfolio/Home.jsx'
+import Home from './Components/Portfolio/Home';
+import Projects from './Components/Portfolio/Projects';
+import Resume from './Components/Portfolio/Resume';
 
 
 export default function App() {
@@ -9,6 +11,8 @@ export default function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/Projects' element={<Projects />} />
+        <Route path='/Resume' element={<Resume />} />
       </Routes>
 
     </div>

@@ -2,11 +2,11 @@ import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
-export default function Resume(props) {
+export default function Resume() {
     return (
         <div>
             <Header />
-                <p>Home</p>
+                <p>Resume</p>
             <Footer />
         </div>
     );
