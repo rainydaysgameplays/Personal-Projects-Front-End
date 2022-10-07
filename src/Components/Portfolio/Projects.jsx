@@ -6,13 +6,12 @@ export default function Projects() {
     const [projectState, setProjectState] = useState([])
 
     useEffect(() => {
-        setProjectState("test")
+        setProjectState("non search")
     },[setProjectState])
   
     return (
-        <div>
-            <Header setProjectState={setProjectState}/>
-                <p>Projects</p>
+        <div className='portContent'>
+            <Header Title={"Project"} setProjectState={setProjectState}/>
                 <p>{projectState}</p>
             <Footer />
         </div>

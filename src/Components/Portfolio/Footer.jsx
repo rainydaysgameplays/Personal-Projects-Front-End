@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <div>
+        <div id='portFooter'>
             <p>Footer</p>
         </div>
     );

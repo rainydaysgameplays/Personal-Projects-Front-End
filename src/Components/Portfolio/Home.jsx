@@ -4,8 +4,8 @@ import Header from './Header';
 
 export default function Home() {
     return (
-        <div>
-            <Header />
+        <div className='portContent'>
+            <Header Title={"Home"}/>
                 <p>Home</p>
             <Footer />
         </div>

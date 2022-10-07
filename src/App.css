@@ -2,37 +2,41 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.portContent{
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#portHeader{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: column nowrap;
+  background-color: blue;
 }
 
-.App-link {
-  color: #61dafb;
+#headerTitle{
+  margin: 0;
+  padding-top: 20px;
+}
+#searchContainer{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#headerLinks{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#portFooter{
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  background-color: green;
 }

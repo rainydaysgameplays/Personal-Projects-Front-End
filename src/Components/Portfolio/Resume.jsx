@@ -4,8 +4,8 @@ import Header from './Header';
 
 export default function Resume() {
     return (
-        <div>
-            <Header />
+        <div className='portContent'>
+            <Header Title={"Resume"}/>
                 <p>Resume</p>
             <Footer />
         </div>
