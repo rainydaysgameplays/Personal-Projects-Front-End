@@ -5,24 +5,35 @@
 .portContent{
   height: 100vh;
   width: 100vw;
-  background-color: red;
+  background-color: rgb(210, 210, 210);
 }
 
 #portHeader{
   display: flex;
   flex-flow: column nowrap;
-  background-color: blue;
+  background-color: black;
+  color: white;
 }
 
 #headerTitle{
   margin: 0;
   padding-top: 20px;
 }
+#headerNav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+
+
 #searchContainer{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   padding-right: 20px;
+  grid-column: 4;
+  position: relative;
+  right: 0;
+  height: min-content;
 }
 
 
@@ -30,7 +41,19 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  grid-column: 1 / span 2;
 }
+.indHeaderLink{
+  color: black;
+  background-color: rgb(209, 206, 206);
+  padding: 1px 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10%;
+  text-decoration: none;
+}
+
 
 #portFooter{
   display: flex;
@@ -38,5 +61,6 @@
   position: absolute;
   width: 100vw;
   bottom: 0;
-  background-color: green;
+  background-color: rgb(55, 55, 55);
+  color: white;
 }

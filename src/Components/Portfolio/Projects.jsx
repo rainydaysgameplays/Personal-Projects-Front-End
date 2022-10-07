@@ -11,7 +11,10 @@ export default function Projects() {
   
     return (
         <div className='portContent'>
-            <Header Title={"Project"} setProjectState={setProjectState}/>
+            <Header Title={"Projects"} setProjectState={setProjectState}/>
+                <div>
+                    <p>Common tags here</p>
+                </div>
                 <p>{projectState}</p>
             <Footer />
         </div>
