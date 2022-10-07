@@ -35,6 +35,9 @@
   right: 0;
   height: min-content;
 }
+#headerSearch{
+  margin-right: 2px;
+}
 
 
 #headerLinks{
