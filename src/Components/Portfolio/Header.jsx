@@ -28,7 +28,7 @@ export default function Header({ setProjectState, Title }) {
             <div id='searchContainer'>
                 <label htmlFor="headerSearch"></label>
                 <input type="search" id='headerSearch' onKeyDown={onKeyDown}/>
-                <button onClick={projState}>search</button>
+                <button onClick={projState} id='headerBtn'>search</button>
             </div>
             </div>
 

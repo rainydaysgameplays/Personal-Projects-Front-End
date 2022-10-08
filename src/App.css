@@ -1,16 +1,21 @@
-.App {
-  text-align: center;
-}
-
-.portContent{
-  height: 100vh;
-  width: 100vw;
+body{
   background-color: rgb(210, 210, 210);
+}
+.portContent{
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 40px;
+}
+.aboutPara{
+  padding: 0px 15px 0px 15px;
 }
 
 #portHeader{
   display: flex;
   flex-flow: column nowrap;
+
+  width: 100%;
   background-color: black;
   color: white;
 }
@@ -25,6 +30,7 @@
 }
 
 
+
 #searchContainer{
   display: flex;
   flex-flow: row nowrap;
@@ -36,7 +42,17 @@
   height: min-content;
 }
 #headerSearch{
-  margin-right: 2px;
+  margin-right: .25px;
+  border: 1px solid black;
+  border-radius:10px 0px 0px 10px;
+  text-align: center;
+  max-width: 150px;
+  min-width: 50px;
+}
+#headerBtn{
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 0px 10px 10px 0px;
 }
 
 
@@ -44,6 +60,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  padding-left: 20px;
   grid-column: 1 / span 2;
 }
 .indHeaderLink{
@@ -53,17 +70,35 @@
   margin-bottom: 5px;
   margin-top: 5px;
   border: 1px solid black;
-  border-radius: 10%;
+  border-radius: 10px;
   text-decoration: none;
 }
 
 
 #portFooter{
   display: flex;
-  flex-flow: column wrap;
-  position: absolute;
-  width: 100vw;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  position:fixed;
   bottom: 0;
+  width: 100%;
   background-color: rgb(55, 55, 55);
   color: white;
+  height: 40px;
+  
+}
+
+.footerLinks{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(187, 187, 187);
+  height: 20px;
+  text-decoration: none;
+  margin: 7px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0px 5px;
 }
