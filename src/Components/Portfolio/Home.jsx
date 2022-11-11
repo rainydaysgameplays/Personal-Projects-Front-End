@@ -8,7 +8,7 @@ export default function Home() {
             <Header Title={"About Me"}/>
             <div>
                 <div>
-                    <p>profile pic here</p>
+                    
                 </div>
                 <div className='aboutPara'>
                     <h3>Career path</h3>
