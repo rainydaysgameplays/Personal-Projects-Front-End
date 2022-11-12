@@ -1,8 +1,10 @@
 import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
-
-
+import resumePdf from './PortfolioAssets/resume.pdf'
+import resumeJpg from './PortfolioAssets/resume.jpg'
+console.log(resumePdf)
+console.log(resumeJpg)
 
 export default function Resume() {
     return (
