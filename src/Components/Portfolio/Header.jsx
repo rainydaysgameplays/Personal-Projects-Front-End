@@ -1,18 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-export default function Header({ setProjectState, Title }) {
-
+export default function Header({ setProjectState, Title, projectState }) {
+    
     function projState(){
-        if(setProjectState !== undefined){
+        if(setProjectState !== undefined && document.getElementById('headerSearch').value !== ""){
             let searchInput = document.getElementById('headerSearch').value
-            setProjectState(searchInput)
+            
+            if(projectState.length === 0){
+                setProjectState([searchInput])
+            }
+            else(
+               
+                setProjectState((projectState) => [...projectState, searchInput])
+            )
+
+            document.getElementById('headerSearch').value = ""
         }
     }
     function onKeyDown(e){
-        if(e.keyCode === 13 && setProjectState !== undefined){
+        if(e.keyCode === 13 && setProjectState !== undefined && document.getElementById('headerSearch').value !== ""){
             let searchInput = document.getElementById('headerSearch').value
-            setProjectState(searchInput)
+            if(projectState.length === 0){
+                setProjectState([searchInput])
+            }
+            else(
+                setProjectState((projectState) => [...projectState, searchInput])
+            )
+            document.getElementById('headerSearch').value = ""
         }
     }
     return (

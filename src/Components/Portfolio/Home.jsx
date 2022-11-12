@@ -31,12 +31,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div className='aboutPara'>
-                    <h3>Goals</h3>
-                    <p>
-                        My biggest goal is indapendance from my parents, especially as I am currently renting a space from them. So getting my own place after a job is of my highest priority.
-                        Otherwise I would say saving money would be my biggest goal.
-
-                    </p>
+   
                 </div>
 
             </div>

@@ -23,12 +23,15 @@ body{
   justify-content: center;
   margin: 5px 0px;
 }
-#downloadBtn{
+#resumeBtnLnk{
   position: relative;
-  right: 10vw;
+  right: 65px;
+}
+#downloadBtn{
   border: 2px solid black;
   border-radius: 10px;
   cursor: pointer;
+  background-color: rgb(246, 246, 246);
 }
 
 #resumeJpg{
