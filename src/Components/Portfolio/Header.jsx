@@ -21,7 +21,7 @@ export default function Header({ setProjectState, Title }) {
 
             <div id='headerNav'>
             <div id='headerLinks'>
-                <Link to={'/'} className='indHeaderLink'>About Me</Link>
+                <Link to={'/'} className='indHeaderLink'>About</Link>
                 <Link to={'/Resume'} className='indHeaderLink'>Resume</Link>
                 <Link to={'/Projects'} className='indHeaderLink'>Projects</Link>
             </div>
