@@ -43,6 +43,7 @@ export default function Header({ setProjectState, Title, projectState, searchPar
             document.getElementById('headerSearch').value = ""
         }
     }
+   
     return (
         <div id='portHeader'>
             <h1 id='headerTitle'>{Title}</h1>
