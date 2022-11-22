@@ -20,12 +20,17 @@ export default function Projects() {
     [
         {
             projectName : "Dungeons",
-            searchTags : ["Front-end", "API", "favorite", "awesome", "GA project"],
-            link : "/link/to/project"
+            description : "a front end app that uses the dungeons and dragons 5th edition API. The site deconstructs the API and serves as an online refference for players and dungeon masters.",
+            searchTags : ["Front-end ", "API ", "favorite ", "awesome ", "GA project "],
+            aboutLink : "/link/to/project/about",
+            projectLink : "/link/to/project"
         },
         {
-            projectName : "project2",
-            searchTags : ["MERN", "Full-Stack", "API", ""]
+            projectName : "project 2",
+            description : "A test to see how it displays data",
+            searchTags : ["Front-end ", "API ", "Test "],
+            aboutLink : "/link/to/test/about",
+            projectLink : "/link/to/test"
         }
     ]
 
@@ -34,24 +39,28 @@ export default function Projects() {
     while(i < projectObj.length){
         let matchCount = 0
         let projName = projectObj[i].projectName
-        let tags = projectObj[i].searchTags
+        let projDescription = projectObj[i].description
+        let projAboutLink = projectObj[i].aboutLink
+        let projLink = projectObj[i].projectLink
+        let projTags = projectObj[i].searchTags
 
         if(projectState.length === 0){
             projArr.push(
-                <div key={i}>
-                    {projectObj[i].projectName}
-                    {projectObj[i].searchTags}
+                <div key={i} className="projectsCard">
+                    <h4 className="projCardHead"><a href={projLink} className='headCardLinks'>{projName}</a></h4>
+                    <p>{projDescription} <a href={projAboutLink} className='aboutCardLinks'>Learn More</a></p>
+                    <p className='projCardTags'>Tags: {projTags.toString()}</p>
                 </div>
             )
         }
        
         else if(projectState.length > 0){
             projectState.forEach((e3) => {
-                if(e3.toUpperCase() === projName.toUpperCase()){
+                if(e3.toUpperCase().trim() === projName.toUpperCase()){
                     matchCount++
                 }
-                tags.forEach((e4) => {
-                    if(e3.toUpperCase() === e4.toUpperCase()){
+                projTags.forEach((e4) => {
+                    if(e3.toUpperCase().trim() === e4.toUpperCase().trim()){
                         matchCount++
                     }
                 })
@@ -60,9 +69,12 @@ export default function Projects() {
                 
 
                 projArr.push(
-                    <div key={i}>
-                        {projectObj[i].projectName}
-                        {projectObj[i].searchTags}
+                    <div key={i} className="projectsCard">
+                        <div>{projName}</div>
+                        <div>{projDescription}</div>
+                        <div>{projAboutLink}</div>
+                        <div>{projLink}</div>
+                        <div>{projTags}</div>
                     </div>
                 )
             }

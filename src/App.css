@@ -39,6 +39,53 @@ body{
   max-width: 700px;
 }
 
+#projectContainer{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.projectsCard{
+  border: 2px solid black;
+  margin: 15px;
+  padding: 10px;
+  max-width: 75%;
+
+}
+.projCardHead{
+  margin: 0px 0px 10px 0px;
+}
+
+.headCardLinks, .aboutCardLinks{
+  white-space: nowrap;
+  text-decoration: none;
+}
+.headCardLinks{
+  color: black;
+}
+.headCardLinks:visited{
+  color: black;
+}
+.headCardLinks:hover{
+  text-decoration: underline solid grey;
+  color: grey;
+}
+.aboutCardLinks{
+  color: purple;
+}
+.aboutCardLinks:visited{
+  color: purple;
+}
+.aboutCardLinks:hover{
+  text-decoration: underline solid rgb(208, 0, 208);
+  color: rgb(208, 0, 208);
+}
+
+.projCardTags{
+  display: flex; 
+  flex-flow: row wrap;
+  margin: 0px;
+  justify-content: flex-end;
+}
 
 #searchArrContainer{
   display: flex;
